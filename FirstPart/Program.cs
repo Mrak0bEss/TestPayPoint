@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using TronNet;
 using TronNet.Accounts;
 using TronNet.Contracts;
@@ -25,7 +25,22 @@ namespace FirstPart
                 Console.WriteLine("Adress: " + acc.Address);
                 Console.WriteLine("Private key: " + acc.PrivateKey);
             }
-
+            public TronECKey getKey()
+            {
+                return key;
+            }
+            public TronAccount getAccount()
+            {
+                return acc;
+            }
+            public string getAddres()
+            {
+                return acc.Address;
+            }
+            public string getPrivateKey()
+            {
+                return acc.PrivateKey;
+            }
 
         }
         static void Main(string[] args)
